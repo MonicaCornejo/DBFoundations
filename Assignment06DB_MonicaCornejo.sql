@@ -247,8 +247,6 @@ As
 Order By 1,2;
 Go
 
-Select Top 3 * From vProductsByCategories;
-Go
 
 -- Question 4 (10% pts): How can you create a view to show a list of Product names 
 -- and Inventory Counts on each Inventory Date?
@@ -269,8 +267,6 @@ As
 Order By 1,3,2;  --Ordered by Product, Date, and Count
 Go
 
-Select Top 3 * From vInventoriesByProductsByDates;
-Go
 
 -- Question 5 (10% pts): How can you create a view to show a list of Inventory Dates 
 -- and the Employee that took the count?
@@ -291,8 +287,6 @@ As
 Order By 1;  --Ordered by Product, Date, and Count
 Go
 
-Select Top 3 * From vInventoriesByEmployeesByDates;
-Go
 
 -- Question 6 (10% pts): How can you create a view show a list of Categories, Products, 
 -- and the Inventory Date and Count of each product?
@@ -315,8 +309,6 @@ As
 Order By 1,2,3,4;
 Go
 
-Select Top 3 * From vInventoriesByProductsByCategories;
-Go
 
 -- Question 7 (10% pts): How can you create a view to show a list of Categories, Products, 
 -- the Inventory Date and Count of each product, and the EMPLOYEE who took the count?
@@ -346,8 +338,6 @@ As
 Order By 3,1,2,5
 Go
 
-Select Top 3 * From vInventoriesByProductsByEmployees;
-Go
 
 -- Question 8 (10% pts): How can you create a view to show a list of Categories, Products, 
 -- the Inventory Date and Count of each product, and the Employee who took the count
@@ -378,8 +368,6 @@ Where ProductName In ('Chai','Chang')
 Order By 3,1,2,5
 Go
 
-Select Top 3 * From vInventoriesForChaiAndChangByEmployees;
-Go
 
 -- Question 9 (10% pts): How can you create a view to show a list of Employees and the Manager who manages them?
 -- Order the results by the Manager's name!
@@ -400,8 +388,6 @@ Inner Join vEmployees As M
 Order By 1
 Go
 
-Select Top 3 * From vEmployeesByManager;
-Go
 
 -- Question 10 (20% pts): How can you create one view to show all the data from all four 
 -- BASIC Views?
